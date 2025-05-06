@@ -1,0 +1,13 @@
+<a href="https://store.steampowered.com/app/{{game['appid']}}" target="_blank">
+    <div class="bg-[#2c2f33] w-full p-5 mx-auto grid lg:grid-cols-12 grid-col-1 outline-1 outline-[#66c0f4] hover:bg-[#23262a] hover:scale-105 transition-all rounded-md gap-5">
+        <div class="w-full h-full lg:col-span-4 overflow-hidden">
+            <img src="{{game['header_image']}}" alt="{{game['name']}} header image"class="w-full h-full object-cover object-center"/>
+        </div>
+        <div class="lg:col-span-8">
+            <p class="inline-block steam-font">{{game['name']}}</p>
+            <p class="opacity-25">appid: {{game['appid']}}</p>
+            <p class="steam-font">Time played: {{ (game['playtime_forever'] / 60) | round }} hours</p>
+            <p class="">Price: <span class="text-green-600">US${{(game['final_price'] / 100)}}</span></p>
+        </div>
+    </div>
+</a>

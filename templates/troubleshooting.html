@@ -1,0 +1,43 @@
+{% include "./partials/head.html" %}
+<body class="flex flex-col min-h-screen from-[#1b1f23] to-[#1b1f23] bg-gradient-to-br text-white">
+
+    {% include "./partials/navbar.html" %}
+
+    <div class="min-h-screen lg:px-96 px-5 text-justify">
+        <h1 class="steam-font font-bold lg:text-4xl text-4xl text-center underline underline-offset-4 mb-10">Troubleshooting</h1>
+
+        <div class="mx-auto border-[1px] border-gray-400 w-fit p-5 rounded-md">
+            <p>This page provides solutions to common issues encountered in this application. If you've experienced any issues not listed here, please <a href="https://github.com/Gustavo2022003/SteamWaste/issues" target="_blank" class="text-red-400 underline">report</a> them so we can address and fix them or visit the <a href="https://github.com/Gustavo2022003/SteamWaste/issues" target="_blank" class="text-red-400 underline">issues page</a> at our GitHub.</p>
+        </div>
+
+        <hr class="border-[#ffffff7b] my-10">
+
+        <h1 class="text-xl text-amber-400 mb-2">⚠️ IMPORTANT</h1>
+        <p>Due to constraints imposed by the Steam API — including the possibility of temporarily blocking the host IP if too many requests are made in a short period — this website may display inaccurate or outdated information, which could adversely affect the user experience. We therefore strongly recommend running this application locally on your computer. Please refer to <a href="https://github.com/Gustavo2022003/SteamWaste" target="_blank" class="text-red-400 underline">this tutorial</a> for a detailed step-by-step guide.</p>
+
+        <hr class="border-[#ffffff7b] my-10">
+
+        <h1 class="text-xl p-4 bg-[#2c2f33] inline-block rounded-md mb-5">"My information is not being updated on the website."</h1>
+        <p>This may happen due to our information <span class="text-[#66c0f4] font-bold">caching system</span>. To avoid overloading the Steam API with too many requests per <span class="text-[#66c0f4] font-bold">SteamID</span>, we limit these requests to being made only once every <span class="text-[#66c0f4] font-bold">24 hours</span>. That means, if it's your first request of the day through our site, the information will be stored in cache for later reuse. This significantly reduces the response time for subsequent queries within that <span class="text-[#66c0f4] font-bold">24-hour period</span>. Once that period expires, the next request may take longer, just like the first one, as we need to update and replace the data, then store it in cache again.</p>
+
+        <hr class="border-[#ffffff7b] my-10">
+
+        <h1 class="text-xl p-4 bg-[#2c2f33] inline-block rounded-md mb-5">"The price displayed does not match the price on the Steam product page"</h1>
+        <p>This may occur occasionally. It's important to note that we use the <span class="text-[#66c0f4] font-bold">latest price</span> provided by the API, and in some cases, this may be the <span class="text-[#66c0f4] font-bold">full price</span> (without any discounts). The API may take a <span class="text-[#66c0f4] font-bold">few days</span> to update the price in sync with the value shown on the Steam product page.</p>
+
+        <hr class="border-[#ffffff7b] my-10">
+
+        <h1 class="text-xl p-4 bg-[#2c2f33] inline-block rounded-md mb-5">"Internal Server Error - 500"</h1>
+        <p>If you encounter this issue, please report it <a href="https://github.com/Gustavo2022003/SteamWaste/issues" target="_blank" class="text-red-400 underline">here</a> immediately. In the issue description, kindly provide details on how you found the error (if possible) and on which page (E.g. "/example") it occurred. Provide the most information as you can.</p>
+
+        <hr class="border-[#ffffff7b] my-10">
+
+        <h1 class="text-xl p-4 bg-[#2c2f33] inline-block rounded-md mb-5">"The website is displaying information that does not match my Steam account"</h1>
+        <p>This may occur due to rate limit issues with the API. To avoid this, we recommend running the application locally. If the issue persists, please report it <a href="https://github.com/Gustavo2022003/SteamWaste/issues" target="_blank" class="text-red-400 underline">here.</a></p>
+
+    </div>
+
+    {% include "./partials/footer.html" %}
+
+</body>
+</html>

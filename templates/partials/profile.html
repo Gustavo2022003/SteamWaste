@@ -1,0 +1,13 @@
+<div class="bg-[#2c2f33] backdrop-blur-3xl w-full mx-auto p-10 rounded-md flex flex-col gap-3 items-center outline-1 outline-[#66c0f4] hover:shadow-md hover:shadow-[#66c0f490] transition-all duration-500 hover:cursor-pointer hover:scale-[1.01]">
+    <div class="flex lg:flex-row flex-col gap-5 w-full justify-evenly">
+        <img src="{{player_info['avatar']}}" alt="Player avatar" class="">
+        <div class="flex flex-col gap-2">
+            <p class="text-base text-[#a9b1ba]">Steam username</p>
+            <p class="steam-font text-3xl">{{player_info['nickname']}}</p>
+            <hr class="border-[#ffffff7b] my-2">
+            <p class="text-base text-[#a9b1ba]">{{player_info['name']}}</p>
+            <p class="text-[#a9b1ba]">steamid: {{player_info['steamid']}}</p>
+            <p>You have <span class="text-blue-300">{{ player_info['total_games_library'] }}</span> games, and <span class="text-red-400">{{ games_not_played_qtd }}</span> of them have <span class="underline"><strong>NEVER</strong></span> been played.</p>
+        </div>
+    </div>
+</div>

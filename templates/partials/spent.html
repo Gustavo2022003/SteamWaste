@@ -1,0 +1,10 @@
+<div class="col-span-1 bg-[#2c2f33] p-5 rounded-md outline-1 outline-red-400 hover:shadow-md hover:shadow-[#f8717190] transition-all duration-500 hover:cursor-pointer hover:scale-[1.01] ">
+    {% if total_wasted <= 0 %}
+            <p class="font-bold text-5xl">🎉 Congrats!</p>
+            <p class="my-5">You’ve officially mastered the art of buying games <strong class="underline">and</strong> actually playing them.<br><span class="italic text-[#6a717a]">#Legends only!</span></p>
+        {% else %}
+            <p class="text-md">You've spent about</p>
+            <p class="my-5"><span class="text-red-400 text-5xl font-bold">US$ {{ total_wasted | round(2) }}</span></p>
+            <p class="text-md">on games you <strong class="underline">swore</strong> you'd play someday. <br><span class="italic text-[#6a717a]">Your backlog says otherwise.</span></p>
+        {% endif %}
+</div>
