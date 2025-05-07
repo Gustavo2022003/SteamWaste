@@ -1,8 +1,6 @@
 # SteamWaste
 SteamWaste is a web application that allows users to enter their SteamID to analyze their game library, showing how many games they own, how many they've never played, the dollar value of unplayed games, and the estimated total value of their collection.
 
-[Visit it here](https://steamwaste.onrender.com)
-
 [![My Skills](https://skillicons.dev/icons?i=docker,html,css,tailwind,python,fastapi)]()
 
 ## 🚀 Getting Started
