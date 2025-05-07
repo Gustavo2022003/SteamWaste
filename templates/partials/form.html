@@ -2,7 +2,7 @@
     <p class="steam-font text-xl">Steam ID:</p>
     <a href="https://store.steampowered.com/account/" target="_blank"><p class="text-gray-400 text-base lg:text-sm underline hover:text-gray-200">You can find it here</p></a>
     <input type="text" placeholder="Type your Steam ID" name="steamid" id="steamid" required class="text-center focus:outline-none bg-[#1b1f23] p-2 rounded-md focus:border-2 border-2 border-[#1b1f23] focus:border-white">
-    <button type="submit" class="transition-all duration-300 outline-1 outline-[#66c0f4] hover:bg-[#66c0f419] py-1 px-2 rounded-md hover:cursor-pointer text-2xl lg:text-base">Submit</button>
+    <button type="submit" onclick="sendForm()" class="transition-all duration-300 outline-1 outline-[#66c0f4] hover:bg-[#66c0f419] py-1 px-2 rounded-md hover:cursor-pointer text-2xl lg:text-base">Submit</button>
     {% if warning: %}
         <p class="steam-font text-red-400">{{warning}}</p>
     {% endif %}
