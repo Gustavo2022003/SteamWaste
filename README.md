@@ -15,34 +15,42 @@ You'll need to have [Docker](https://www.docker.com/) installed. Docker simplifi
 
 ---
 
-### 🛠️ Running Locally
+### 🛠️ Running the Project Locally
 
-1. **Clone or Download the Project**
+1. **Clone or Download the Repository**
 
    * Option 1: [Fork this repository](https://github.com/Gustavo2022003/SteamWaste/fork)
-   * Option 2: [Download the ZIP file](https://github.com/Gustavo2022003/SteamWaste/archive/refs/heads/main.zip) and extract it
+   * Option 2: [Download as ZIP](https://github.com/Gustavo2022003/SteamWaste/archive/refs/heads/main.zip) and extract it to your preferred location
 
-2. **Navigate into the Project Folder**
+2. **Navigate to the Project Directory**
 
    ```bash
    cd SteamWaste
    ```
 
-3. **Run the Application Using Docker**
+3. **Set Up Environment Variables**
+
+   Create a file named `.env` in the project root and add your Steam API key:
+
+   ```env
+   API_KEY=[your_key_here]
+   ```
+
+   You can obtain your API key [here](https://steamcommunity.com/dev/apikey).
+
+4. **Build and Run with Docker**
 
    ```bash
    docker compose up -d --build
    ```
 
-4. **Open in Your Browser**
+5. **Access the Application**
 
-   Once running, open your browser and go to:
+   Once running, open your browser and visit:
 
    ```
    http://localhost:8000
    ```
-
----
 
 ## 💡 Features
 
